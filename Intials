@@ -1,0 +1,16 @@
+
+def get_initials(full_name):
+    list = full_name
+    name_list = list.split()
+
+    initials = ""
+
+    for name in name_list:
+        initials += name[0].upper()
+
+    return initials
+
+
+initials = get_initials(input("Please enter your name: "))
+
+print("Your initials are", initials)
