@@ -1,0 +1,13 @@
+cost_to_produce = 20.00
+sale_price = 40.00
+fixed_cost = 50000.00
+
+profit = 20
+breakeven = fixed_cost / profit
+
+print("The cost to produce each item is: ", str(cost_to_produce))
+print("The sale price for each item is: ", str(sale_price))
+print("The fixed cost is:", str(fixed_cost))
+print("The profit per item is: ", str(profit))
+
+print("The Breakeven is: ", str(breakeven), "items")
