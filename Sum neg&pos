@@ -1,0 +1,13 @@
+nums = []
+positive = 0
+negative = 0
+for i in range(0, 10):
+    amount = int(input("please enter a number: "))
+    if amount > 0:
+        positive = amount + positive
+    else:
+        negative = amount + negative
+    nums.append(amount)
+
+print("All of your positive numbers added up are", positive)
+print("All of your negative numbers added up are", negative)
