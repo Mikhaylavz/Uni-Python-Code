@@ -1,0 +1,31 @@
+
+peach_price = 0.3
+beans_price = 0.8
+chicken_price = 1.2
+socks_price = 1.5
+water_price = 0.7
+
+
+peach_num = int(input("How many peaches do you want? "))
+peach_tot_price = peach_num*peach_price
+print("That will cost £{:0.2f}".format(peach_tot_price))
+
+beans_num = int(input("How many cans of beans do you want? "))
+beans_tot_price = beans_num*beans_price
+print("That will cost £{:0.2f}".format(beans_tot_price))
+
+chicken_num = int(input("How many packs of chicken do you want? "))
+chicken_tot_price = chicken_num*chicken_price
+print("That will cost £{:0.2f}".format(chicken_tot_price))
+
+socks_num = int(input("How many pairs of socks do you want? "))
+socks_tot_price = socks_num*socks_price
+print("That will cost £{:0.2f}".format(socks_tot_price))
+
+water_num = int(input("How many bottles of water do you want? "))
+water_tot_price = water_num*water_price
+print("That will cost £{:0.2f}".format(water_tot_price))
+
+total_price = peach_tot_price + beans_tot_price + chicken_tot_price + socks_tot_price + water_tot_price
+
+print("The total cost of your shopping is: ", str(total_price))
