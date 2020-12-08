@@ -1,0 +1,48 @@
+check = 0
+loop1 = 1
+this = 1
+count = 0
+loop = 1
+while loop == 1:
+    print("1. New user")
+    print("2. Existing user")
+    choice = str(input("please select option: "))
+    if choice == "1":
+        while this == 1:
+            new_pass = str(input("please input a password: "))
+            check = 1
+            #"- It must be at least 8 characters long"
+            # "- It cannot contain a space"
+            #"- It cannot begin with a number "
+            if len(new_pass) < 8:
+                print("Your password must be more than 7 characters!")
+            elif new_pass.isspace():
+                print("Your password cannot contain a space!")
+            elif new_pass[0].isdigit():
+                print("Your password cannot start with a number! ")
+            else:
+                while loop1 == 1:
+                    enter_pass = str(input("Please re-enter your password: "))
+                    if enter_pass != new_pass:
+                        print("This password is incorrect, please try again.")
+                    else:
+                        loop1 = 0
+                this = 0
+    elif choice == "2":
+        if check == 1:
+
+            while count != 3:
+                enter_pass2 = input("Please input your password: ")
+                if enter_pass2 != new_pass:
+                    print("This password is incorrect please try again")
+                    count += 1
+                else:
+                    print("Welcome")
+                    exit()
+            print("You are locked out!")
+            exit()
+        else:
+            print("You have not created a password please make a new one")
+
+
+
