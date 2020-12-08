@@ -1,0 +1,10 @@
+width = int(input("Please enter the width of your cuboid: "))
+length = int(input("Please enter the length of your cuboid: "))
+height = int(input("Please enter the height of your cuboid: "))
+
+surf_area = 2*((length*width)+(length*height)+(height*width))
+
+volume = width*length*height
+
+print("The surface area of your cuboid is: ", str(surf_area))
+print("The volume of your cuboid is: ", str(volume))
