@@ -1,0 +1,10 @@
+this = 1
+while this == 1:
+
+    colours = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+
+    choice = int(input("Please enter a number: "))
+
+    colour_choice = choice - 1
+
+    print("Yours colour is", colours[colour_choice])
