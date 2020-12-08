@@ -1,0 +1,32 @@
+nums = []
+positive = 0
+negative = 0
+count_pos = 0
+count_neg = 0
+average_neg = 0
+average_pos = 0
+for i in range(0, 10):
+    amount = int(input("please enter a number: "))
+    if amount > 0:
+        positive = amount + positive
+        count_pos = count_pos + 1
+    else:
+        negative = amount + negative
+        count_neg = count_neg + 1
+    nums.append(amount)
+if count_neg == 0:
+    print("You didnt enter any negative numbers!")
+    average_pos = positive / count_pos
+
+elif count_pos == 0:
+    print("You didnt enter any positive numbers!")
+    average_neg = negative / count_neg
+else:
+    average_pos = positive / count_pos
+    average_neg = negative / count_neg
+
+
+print("All of your positive numbers added up are", positive)
+print("All of your negative numbers added up are", negative)
+print("The average of the positive numbers are {:0.2f}".format(average_pos))
+print("The average of negative numbers are  {:0.2f}".format(average_neg))
