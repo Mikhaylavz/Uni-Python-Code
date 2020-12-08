@@ -1,0 +1,26 @@
+this = 1
+while this == 1:
+
+    def reverse(num):
+      rev = 0
+      while num > 0:
+        rev = (10*rev) + num%10
+        num //= 10
+      return rev
+
+    num = int(input("Enter a number: "))
+
+    if len(str(num)) < 2:
+        print("This number is less than 2 digits")
+
+    elif len(str(num)) > 11:
+        print("This number is more than 11 digits")
+
+    elif num < 0:
+        print("Exiting program")
+        exit()
+    else:
+        rev45 = reverse(num)
+        print(rev45)
+
+
