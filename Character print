@@ -1,0 +1,12 @@
+
+
+number = int(input("Enter a number: "))
+character = str(input("Enter a letter: "))
+
+def num():
+    count = 0
+    while count < number:
+        count += 1
+        print(character)
+
+num()
