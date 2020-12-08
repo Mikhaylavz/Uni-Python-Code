@@ -1,0 +1,6 @@
+surname = str(input("Please state your surname "))
+house_num = int(input("Please state your house number "))
+road = str(input("Please state your road name "))
+town = str(input("Finally please state the name of your town "))
+
+print("Mr and Mrs", str(surname), str(house_num), str(road), str(town))
