@@ -1,0 +1,14 @@
+print("Welcome To Shopping List!")
+numItems = 5
+f_list = ()
+myList = []
+
+for x in range(int(numItems)):
+    itemName = input("Enter item name: ")
+    itemPrice = input("Enter item price: ")
+    f_list = (itemPrice, itemName)
+    myList.append(f_list)
+
+myList.sort()
+
+for x in range(len(myList)): print(myList[x][1] + " = " + myList[x][0])
