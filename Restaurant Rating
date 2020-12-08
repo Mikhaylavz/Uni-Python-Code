@@ -1,0 +1,42 @@
+one_star = 0
+two_star = 0
+thr_star = 0
+fou_star = 0
+fiv_star = 0
+this = 0
+count = 0
+
+while this == 0:
+
+    rating = str(input("Enter your rating 1-5: "))
+    count += 1
+    if rating == "1":
+        one_star += 1
+    elif rating == "2":
+        two_star += 1
+    elif rating == "3":
+        thr_star += 1
+    elif rating == "4":
+        fou_star += 1
+    elif rating == "5":
+        fiv_star += 1
+    elif rating == "-1":
+        this = -1
+    else:
+        print("This is not an acceptable rating: ")
+
+
+average = ((one_star * 1) + (two_star * 2) + (thr_star * 3) + (fou_star * 4) + (fiv_star * 5)) / count
+average = round(average)
+
+list = [one_star, two_star, thr_star, fou_star, fiv_star, average]
+
+
+print("The ratings for this restaurant are: ")
+print(": 1 star : 2 star : 3 star : 4 star : 5 star : average 0DP :")
+print(":", list[0], (" " * (5-len(str(list[0])))), ":", list[1], (" " * (5-len(str(list[1])))), ":", list[2],
+      (" " * (5-len(str(list[2])))), ":", list[3], (" " * (5-len(str(list[3])))), ":", list[4],
+      (" " * (5-len(str(list[4])))), ":", list[5], (" " * (10-len(str(list[5])))), ":")
+
+
+
