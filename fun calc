@@ -1,0 +1,42 @@
+num1 = int(input("Enter the first number"))
+num2 = int(input("Ente the second number"))
+
+print("1. Add")
+print("2. subtarct")
+print("3. multiply")
+print("4. divide")
+print("5. remainder")
+
+choice = int(input("Enter the operation number"))
+newnum = 0
+
+def add():
+    newnum = num1 + num2
+    print(newnum)
+    
+def subtract():
+    newnum = num1 - num2
+    print(newnum)
+    
+def multiply():
+    newnum = num1 * num2
+    print(newnum)
+def divide():
+    newnum = num1 / num2
+    print(newnum)
+def remainder():
+    newnum = num1 % num2
+    print(newnum)
+
+if choice == 1:
+    add()
+elif choice == 2:
+    subtract()
+elif choice ==3:
+    multiply()
+elif choice == 4:
+    divide()
+elif choice == 5:
+    remainder()
+else:
+    print("THATS NOT A NUMBER YOU CAN CHOOSE")
