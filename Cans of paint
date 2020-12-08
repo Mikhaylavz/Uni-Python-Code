@@ -1,0 +1,29 @@
+import math
+
+height_wall = 3.4
+width = 30
+length = 40
+coverage_per_can = 5.1
+diameter = 15
+height_of_can = 30
+boxes_l = 60
+boxes_w = 30
+boxes_h = 35
+
+amount_of_coverage = 2*(height_wall*(width+length))
+amount_of_cans_needed = math.ceil(amount_of_coverage / coverage_per_can)
+
+area_of_box = (boxes_l*boxes_w*boxes_h)
+area_of_can = (diameter*height_of_can*math.pi)
+
+amount_of_cans_in_box = math.floor(area_of_box/area_of_can)
+
+amount_not_in_box = (amount_of_cans_needed % amount_of_cans_in_box)
+
+amount_of_full_boxes = ((amount_of_cans_needed-amount_not_in_box)/amount_of_cans_in_box)
+
+print("The size of the wall that needs painting is ", str(amount_of_coverage))
+print("So the amount of cans of paint needed is ", str(amount_of_cans_needed))
+print("The number of full boxes given to the customer buying this quantity of paint is", str(amount_of_full_boxes))
+print("The amount of cans not in the box is", str(amount_not_in_box))
+print("amount of cans that can fit in the box", str(amount_of_cans_in_box))
