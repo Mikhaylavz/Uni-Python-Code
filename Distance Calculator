@@ -1,0 +1,9 @@
+print("This program will calculate the distance travelled by an object moving with constant acceleration")
+
+velocity = int(input("Please state the objects initial speed in metres per second "))
+time = int(input("Please state the time in which the object took to travel the distance in seconds "))
+acceleration = int(input("Please state the acceleration of the object in metres per second per second "))
+
+distance = ((velocity*time)+(0.5*acceleration*(time**2)))
+
+print("The distance the object travelled is {:0.2f}".format(distance))
