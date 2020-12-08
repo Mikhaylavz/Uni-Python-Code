@@ -1,0 +1,34 @@
+import random
+
+def get_number():
+    num = (random.randint(0, 13))
+    if num == 1:
+        print("Ace")
+    elif num == 11:
+        print("Jack")
+    elif num == 12:
+        print("Queen")
+    elif num == 13:
+        print("King")
+    else:
+        print(num)
+    return num
+
+
+number = get_number()
+
+choice = input("will the next card be higher or lower? ")
+
+number2 = get_number()
+
+if number2 < number:
+    answer = "lower"
+elif number2 > number:
+    answer = "higher"
+
+if choice == answer:
+    print("Correct")
+else:
+    print("Incorrect")
+
+
