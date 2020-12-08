@@ -1,0 +1,8 @@
+columns = int(input("Please enter the amount of columns that you want: "))
+rows = int(input("Please enter the amount of rows that you want: "))
+
+for i in range(rows):
+    for x in range(columns):
+        print("*", end=" ")
+    print()
+
