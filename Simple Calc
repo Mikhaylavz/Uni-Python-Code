@@ -1,0 +1,13 @@
+num_1 = int(input("Please enter the first positive integer: "))
+num_2 = int(input("Please enter the second positive integer: "))
+oper = input("Enter the operation between the two numbers: ")
+
+if oper == "+":
+    print("Your sum is", (num_1), "+", (num_2), "and the answer is", (num_1 + num_2))
+elif oper == "-":
+    print("Your sum is", (num_1), "-", (num_2), "and the answer is", (num_1 - num_2))
+elif oper == "_":
+    print("Your sum is", (num_1), "/", (num_2), "and the answer is", (num_1 / num_2))
+elif oper == "*":
+    print("Your sum is", (num_1), "*", (num_2), "and the answer is", (num_1 * num_2))
+
