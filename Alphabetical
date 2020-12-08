@@ -1,0 +1,3 @@
+list = [str(i) for i in input("Enter 5 strings with a space between them: ").split()]
+list.sort()
+print(list)
