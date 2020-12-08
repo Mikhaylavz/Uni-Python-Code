@@ -1,0 +1,5 @@
+numlist = [int(i) for i in input("Enter 2 numbers with a space between them: ").split()]
+
+print("Your numbers are: ", numlist)
+
+print("Your numbers swapped are: ", numlist[1], numlist[0])
