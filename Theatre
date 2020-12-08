@@ -1,0 +1,55 @@
+import math
+
+num_adult = int(input("How many adults will be attending? "))
+num_child = int(input("How many children will be attending? "))
+num_concessions = int(input("How many concessions will be attending? "))
+
+collecting = str(input("Are you collecting the tickets? "))
+
+price_adult = 10.5
+price_child = 7.3
+price_concessions = 8.4
+
+if num_adult == 0 and num_child > 0:
+    print("ALL CHILDREN MUST BE ACCOMPANIED BY AT LEAST ONE ADULT!!!! ")
+    exit()
+
+full_price_adult = num_adult*price_adult
+full_price_child = num_child*price_child
+full_price_concessions = num_concessions*price_concessions
+
+total_price = full_price_adult + full_price_child + full_price_concessions
+print("Price for adults: £", float(full_price_adult))
+print("Price for children: £", float(full_price_child))
+print("Price for concessions: £", float(full_price_concessions))
+print("Your total without any discounts is: £{:0.2f}".format(total_price))
+
+# offers1
+
+num_free_ticket = math.floor(num_child/10)
+
+if num_free_ticket > num_adult:
+    var = num_free_ticket - num_adult
+    var2 = num_free_ticket - var
+    num_free_ticket = var2
+else:
+    num_free_ticket = math.floor(num_child / 10)
+
+money_free_ticket = num_free_ticket * price_adult
+offer1 = total_price - money_free_ticket
+
+# postage and packaging amount
+if collecting == "no":
+    post = 2.34
+else:
+    post = 0
+
+# offers 2
+if offer1 > 100:
+    var3 = offer1 / 100
+    offer2 = offer1 - var3
+    offer2 = offer2 + post
+    print("With discounts your total is: £{:0.2f}".format(offer2))
+else:
+    offer1 = offer1 + post
+    print("With discounts your total is: £{:0.2f}".format(offer1))
