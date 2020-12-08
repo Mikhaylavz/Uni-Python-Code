@@ -1,0 +1,8 @@
+number_of_sweets = 40
+number_of_students = 14
+
+sweets_leftover = (number_of_sweets % number_of_students)
+sweets_per_child = ((number_of_sweets - sweets_leftover) / number_of_students)
+
+print("Each child gets", str(sweets_per_child) )
+print("the teacher keeps ", str(sweets_leftover))
