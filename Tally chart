@@ -1,0 +1,65 @@
+mylist=[]
+
+avote = 0
+bvote = 0
+cvote = 0
+dvote = 0
+evote = 0
+
+first_name = str(input("Please enter first candidate: "))
+second_name = str(input("Please enter second candidate: "))
+third_name = str(input("Please enter third candidate: "))
+fourth_name = str(input("Please enter fourth candidate: "))
+fifth_name = str(input("Please enter fifth candidate: "))
+
+count = 0
+this = 0
+while this == 0:
+
+    print("a. ", first_name)
+    print("b. ", second_name)
+    print("c. ", third_name)
+    print("d. ", fourth_name)
+    print("e. ", fifth_name)
+
+    count += 1
+    choice = input("Please select a candidate letter: ")
+
+    if choice == "a":
+        avote += 1
+    elif choice == "b":
+        bvote += 1
+    elif choice == "c":
+        cvote += 1
+    elif choice == "d":
+        dvote += 1
+    elif choice == "e":
+        evote += 1
+    elif choice == "1":
+        this = 1
+
+
+my_list = []
+a_list = (avote, first_name)
+my_list.append(a_list)
+
+b_list = (bvote, second_name)
+my_list.append(b_list)
+
+c_list = (cvote, third_name)
+my_list.append(c_list)
+
+d_list = (dvote, fourth_name)
+my_list.append(d_list)
+
+e_list = (evote, fifth_name)
+my_list.append(e_list)
+
+my_list.sort(reverse = True)
+
+
+print("In 1st with ", my_list[0])
+print("In 2nd with", my_list[1])
+print("In 3rd with ", my_list[2])
+print("In 4th with ", my_list[3])
+print("In 5th with ", my_list[4])
