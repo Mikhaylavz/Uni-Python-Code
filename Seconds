@@ -1,0 +1,14 @@
+
+seconds = int(input("Amount of seconds: "))
+
+seconds_left = seconds % 60
+seconds_h = seconds - seconds_left
+minutes = seconds_h/60
+
+minutes_left = minutes % 60
+minutes_h = minutes - minutes_left
+
+hours = minutes_h / 60
+
+print("Input      Hours      Minutes      Seconds")
+print(int(seconds),"      ", int(hours), "         ", int(minutes_left), "            ", int(seconds_left))
