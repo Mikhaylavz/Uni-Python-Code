@@ -1,0 +1,11 @@
+minutes = int(input("Enter number of minutes: "))
+call_rate = 0.15
+vat_rate = 0.2
+
+basic_call_charge = minutes * call_rate
+vat_due = basic_call_charge * vat_rate
+total_bill = basic_call_charge + vat_due
+
+print("Basic call charge: £", float(basic_call_charge))
+print("VAT due: £", float(vat_due))
+print("Total bill: £", float(total_bill))
