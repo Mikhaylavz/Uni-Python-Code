@@ -1,0 +1,14 @@
+
+import random
+count = 1
+first_die = (random.randint(1, 6))
+second_die = (random.randint(1, 6))
+
+while first_die != second_die:
+    first_die = (random.randint(1, 6))
+    second_die = (random.randint(1, 6))
+    print("First die is: ", first_die)
+    print("Second die is:", second_die)
+    count += 1
+
+print("The amount of times it took for the dice to match was: ", count)
